@@ -1,3 +1,4 @@
+
 var gulp = require('gulp');
 
 var cleanCss = require('gulp-clean-css');
@@ -38,4 +39,3 @@ gulp.task('default', ['sass', 'minifyJs'], function () {
     gulp.watch('./src/js/*.js', ['html']);
     gulp.watch('./*.html', ['html']);
 })
-
