@@ -5,6 +5,7 @@
     <title>index</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="dist/js/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <link rel="stylesheet" href="dist/style/index.css">
 </head>
 <body>
@@ -13,11 +14,111 @@
 <div class="signal"></div>
 <!--signal end-->
 
-<!-- scroll -->
+<!-- carousel -->
+<div class="carousel">
+    <transition-group tag='ul' class="slide" name='image'>
+        <li v-for='(image,index) in img' :key='index' v-show='index===mark'>
+            <a href="javascript:;">
+                <img :src="image">
+            </a>
+        </li>
+    </transition-group>
+    <div class="bullet">
+        <span v-for='(item,index) in img.length' :class="{'active':index===mark}" @click='change(index)'></span>
+    </div>
+</div>
+<!-- carousel end-->
 
-<!-- scroll end-->
+<!-- choice -->
+<div class="choice">
+    <div class="choice-box">
+        <div class="title">
+            <h2 class="active">单程</h2>
+            <h2>往返</h2>
+        </div>
+        <div class="info">
+            <div class="city">
+                <a href="javascript:;">出发城市</a>
+                <img src="images/city-exchange.png" alt="">
+                <a href="javascript:;">到达城市</a>
+            </div>
+            <div class="date">
+                <a href="javscript:;">                
+                </a>
+                <a href="javascript:;">
+
+                </a>
+            </div>
+            <div class="person">
+                <div class="amount">
+                    <span>
+                        <em>1</em>
+                        <i>成人</i>
+                    </span>
+                    <span>
+                        <em>0</em>
+                        <i>儿童</i>
+                    </span>
+                </div>
+                <div>
+                    <a href="javascript:;" class="search">搜索</a>
+                </div>
+            </div>
+            <div class="insurance">
+                <img src="images/cs.png" alt="">
+                <span>
+                    价格保障&nbsp;买贵全赔
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- choice end-->
+
+<!-- tab -->
+<div class="tab">
+    <ul>
+        <li>
+            <img src="images/" alt="">
+            <span>选座&办登机牌</span>
+        </li>
+        <li>
+            <img src="images/" alt="">
+            <span>退改/升舱</span>
+        </li>
+        <li>
+            <img src="images/" alt="">
+            <span>明珠会员</span>
+        </li>
+        <li>
+            <img src="images/" alt="">
+            <span>机票兑换/span>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <img src="images/" alt="">
+            <span>旅游度假</span>
+        </li>
+        <li>
+            <img src="images/" alt="">
+            <span>酒店</span>
+        </li>
+        <li>
+            <img src="images/" alt="">
+            <span>接送/自驾</span>
+        </li>
+        <li>
+            <img src="images/" alt="">
+            <span>航延证明</span>
+        </li>
+    </ul>
+</div>
+<!-- tab end-->
 
 
+
+<!-- <script src="dist/js/vue.js"></script> -->
 <script src="dist/js/common.js"></script>
 <script src="dist/js/index.js"></script>
 </body>
