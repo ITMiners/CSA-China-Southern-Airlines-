@@ -1,0 +1,80 @@
+@import "_common";
+body {
+    background: linear-gradient(to bottom, (#01234d)0%, (#1d477e)50%, (#3e72b3)100%);
+}
+
+.signal {
+    width: 100%;
+    height: 0.22rem;
+}
+
+.header {
+    width: 100%;
+    height: 0.37rem;
+    display: flex;
+    //justify-content:flex-start;
+    // align-items:center;
+    a {
+        margin-left: 0.26rem;
+        display: block;
+        width: 0.2rem;
+        height: 0.37rem;
+        background: url(../../images/login_prev.png) no-repeat center center;
+        background-size: .2rem .16rem;
+    }
+    h3 {
+        margin-left: 1rem;
+        color: #fff;
+        font-size: 18px;
+        line-height: .37rem;
+    }
+}
+
+.content {
+    background: #fff;
+    width: 3.43rem;
+    margin: .29rem auto 0;
+    border-radius: .29rem;
+    .login_type {
+        display: flex;
+        width: 2rem;
+        margin: 0 auto;
+        padding-top: .32rem;
+        height: .29rem;
+        a {
+            box-sizing: border-box;
+            border: 1px solid #008acb;
+            font-size: 12px;
+            height: .29rem;
+            width: 1rem;
+            text-align: center;
+            line-height: .29rem;
+        }
+        .vip_type {
+            background: #008acb;
+            border-radius: .03rem 0 0 .03rem;
+            color: #fff;
+        }
+        .dynamic_type {
+            background: #fff;
+            color: #008acb;
+            border-radius: 0 .03rem .03rem 0;
+        }
+    }
+    .login_form {
+        padding: .36rem .25rem .41rem;
+        font-size: 14px;
+        input[name="username"] {
+            width: 100%;
+            line-height: .42rem;
+            border-bottom: 1px solid #d1d9e0;
+            margin-bottom: .27rem;
+        }
+        input[name="userpass"] {
+            width: 100%;
+            line-height: .42rem;
+            border-bottom: 1px solid #d1d9e0;
+            margin-bottom: .27rem;
+        }
+    }
+}

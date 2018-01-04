@@ -6,25 +6,21 @@ ul,ol,li{
   text-decoration: none;
 }
 a{
-  display: block;
   text-decoration: none;
 }
 i,em{
   font-style: normal;
-  display: block;
 }
 html{
-  font-size: 15.67vw;
+  font-size: 26.67vw;
   height: 100%;
 }
 body{
   font-family: "Microsoft Yahei",Arial;
-  background: silver;
   height: 100%;
-  display: flex;
-  flex-direction: column;
+  //display: flex;
+  //flex-direction: column;
 }
 img,input,span{
   border:none;
-  display: block;
 }
