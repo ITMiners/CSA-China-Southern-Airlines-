@@ -16,6 +16,21 @@
 
 <!-- carousel -->
 <div class="carousel">
+    <div class="top-fix">
+        <div>
+            <a href="javascript:;" class="grammar">
+                <img src="images/grammar.png" alt="">
+            </a>
+        </div>
+        <div class="r">
+            <a href="javascript:;" class="scanner">
+                <img src="images/scanner.png" alt="">
+            </a>
+            <a href="javascript:;" class="email">
+                <img src="images/email.png" alt="">
+            </a>
+        </div>
+    </div>
     <transition-group tag='ul' class="slide" name='image'>
         <li v-for='(image,index) in img' :key='index' v-show='index===mark'>
             <a href="javascript:;">
@@ -77,48 +92,216 @@
 
 <!-- tab -->
 <div class="tab">
-    <ul>
+    <ul class="tab-list">
         <li>
-            <img src="images/" alt="">
-            <span>选座&办登机牌</span>
+            <a href="javascript:;">
+                <img src="images/tab-1.png" alt="">
+                <span>选座&办登机牌</span>          
+            </a>
         </li>
         <li>
-            <img src="images/" alt="">
-            <span>退改/升舱</span>
+            <a href="javascript:;">            
+                <img src="images/tab-2.png" alt="">
+                <span>退改/升舱</span>
+            </a>
         </li>
         <li>
-            <img src="images/" alt="">
+            <a href="javascript:;">
+            
+            <img src="images/tab-3.png" alt="">
             <span>明珠会员</span>
+            </a>
+            
         </li>
         <li>
-            <img src="images/" alt="">
-            <span>机票兑换/span>
+            <a href="javascript:;">
+            
+            <img src="images/tab-4.png" alt="">
+            <span>机票兑换</span>
+            </a>
+            
         </li>
     </ul>
-    <ul>
+    <ul class="tab-list">
         <li>
-            <img src="images/" alt="">
+            <a href="javascript:;">
+            
+            <img src="images/tab-5.png" alt="">
             <span>旅游度假</span>
+            </a>
+            
         </li>
         <li>
-            <img src="images/" alt="">
+            <a href="javascript:;">
+            
+            <img src="images/tab-6.png" alt="">
             <span>酒店</span>
+            </a>
+            
         </li>
         <li>
-            <img src="images/" alt="">
+            <a href="javascript:;">
+            
+            <img src="images/tab-7.png" alt="">
             <span>接送/自驾</span>
+            </a>
+            
         </li>
         <li>
-            <img src="images/" alt="">
+            <a href="javascript:;">
+            
+            <img src="images/tab-8.png" alt="">
             <span>航延证明</span>
+            </a>
+            
         </li>
     </ul>
 </div>
 <!-- tab end-->
 
+<!-- banner -->
+<div class="banner">
+    <a href="javascript:;">
+        <img src="images/banner-1.png" alt="">
+    </a>
+    <a href="javascript:;">
+        <img src="images/banner-2.png" alt="">
+    </a>
+</div>
+<!-- banner end-->
 
+<!-- section -->
+<div class="section">
+    <div class="title">
+        <span></span>
+        <h2>
+            热门活动
+        </h2>
+    </div>
+    <div class="content">
+        <div class="top-img">
+            <a href="javascript:;">
+                <img src="images/section-1.png" alt="">
+            </a>
+        </div>
+        <div class="bottom-img">
+            <a href="javascript:;">
+                <img src="images/section-2.png" alt="">
+            </a>
+            <a href="javascript:;">
+                <img src="images/section-3.png" alt="">
+            </a>
+            <a href="javascript:;">
+                <img src="images/section-4.png" alt="">
+            </a>
+        </div>
+    </div>
+</div>
 
-<!-- <script src="dist/js/vue.js"></script> -->
+<div class="section">
+    <div class="title">
+        <span></span>
+        <h2>
+            专属权益
+        </h2>
+    </div>
+    <div class="content">
+        <div class="top-img">
+            <a href="javascript:;">
+                <img src="images/section-1.png" alt="">
+            </a>
+        </div>
+        <div class="bottom-img">
+            <a href="javascript:;">
+                <img src="images/section-2.png" alt="">
+            </a>
+            <a href="javascript:;">
+                <img src="images/section-3.png" alt="">
+            </a>
+            <a href="javascript:;">
+                <img src="images/section-4.png" alt="">
+            </a>
+        </div>
+    </div>
+</div>
+<!-- section end-->
+
+<!-- section-one -->
+<div class="section-one">
+    <div class="title">
+        <span></span>
+        <h2>
+            旅游度假
+        </h2>
+    </div>
+    <div class="content">
+        <div class="content-l">
+            <span class="boom">
+                <img src="images/boom.png" alt="">
+            </span>
+            <div class="pic">
+                <img src="images/section-5.png" alt="">
+            </div>
+            <p>
+                <em>￥</em><span>899</span>起
+            </p>
+        </div>
+        <div class="content-r">
+            <div class="r-top">
+                <a href="javascrtip:;">
+                    <img src="images/section-6.png" alt="">
+                </a>
+            </div>
+            <div class="r-bottom">
+                <a href="javascript:;">
+                    <img src="images/section-7.png" alt="">
+                </a>
+                <a href="javascript:;">
+                    <img src="images/section-8.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- section-one end-->
+
+<!-- footer -->
+<footer>
+    <ul>
+        <li>
+            <a href="javascript:;">
+                <img src="images/footer-1.png" alt="">
+                <span style="color:#008acb">首页</span>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <img src="images/footer-2.png" alt="">
+                <span>行程</span>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <img src="images/footer-3.png" alt="">
+                <span>服务大厅</span>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <img src="images/footer-4.png" alt="">
+                <span>航班动态</span>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <img src="images/footer-5.png" alt="">
+                <span>我</span>
+            </a>
+        </li>
+    </ul>
+</footer>
+<!-- footer end-->
+
 <script src="dist/js/common.js"></script>
 <script src="dist/js/index.js"></script>
 </body>
