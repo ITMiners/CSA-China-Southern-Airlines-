@@ -49,32 +49,121 @@ body {
             width: 1rem;
             text-align: center;
             line-height: .29rem;
-        }
-        .vip_type {
-            background: #008acb;
-            border-radius: .03rem 0 0 .03rem;
-            color: #fff;
-        }
-        .dynamic_type {
             background: #fff;
             color: #008acb;
             border-radius: 0 .03rem .03rem 0;
+        }
+        #vip_type{
+            border-radius: .03rem 0 0 .03rem;
+        }#dynamic_type{
+            border-radius:0  .03rem  .03rem 0;
+         }
+        .active {
+            background: #008acb;
+            color: #fff;
         }
     }
     .login_form {
         padding: .36rem .25rem .41rem;
         font-size: 14px;
-        input[name="username"] {
-            width: 100%;
-            line-height: .42rem;
-            border-bottom: 1px solid #d1d9e0;
-            margin-bottom: .27rem;
+        .vip_login_container{
+            position:relative;
+            width:100%;
+            input[name="username"] {
+                width: 100%;
+                line-height: .42rem;
+                border-bottom: 1px solid #d1d9e0;
+                margin-bottom: .27rem;
+            }
+            input[name="userpass"] {
+                width: 100%;
+                line-height: .42rem;
+                border-bottom: 1px solid #d1d9e0;
+                margin-bottom: .27rem;
+            }
+            .forget{
+                font-size:12px;
+                color:#1493cf;
+                position:absolute;
+                top: 85px;
+                right: 30px;
+            }
         }
-        input[name="userpass"] {
-            width: 100%;
-            line-height: .42rem;
-            border-bottom: 1px solid #d1d9e0;
-            margin-bottom: .27rem;
+        .dynamic_lgoin_container{
+            display:none;
+            position:relative;
+            width:100%;
+            input[name="phone_num"] {
+                width: 100%;
+                line-height: .42rem;
+                border-bottom: 1px solid #d1d9e0;
+                margin-bottom: .27rem;
+            }
+            input[name="phone_pass"] {
+                width: 100%;
+                line-height: .42rem;
+                border-bottom: 1px solid #d1d9e0;
+                margin-bottom: .27rem;
+            }
+            .getpass{
+                font-size:12px;
+                color:#686868;
+                position:absolute;
+                top: 85px;
+                right: 30px;
+            }
         }
+        #remember{
+            display:none;
+        }
+        #remember+label{
+            font-size:14px;
+            color:#008acb;
+            &:before{
+                content:'';
+                margin-right:.04rem;
+                display:inline-block;
+                width:.12rem;
+                height:.12rem;
+                border:2px solid #10a9ec;
+                position:relative;
+                top:2px;
+            }
+        }
+        #remember:checked+label{
+            &:before{
+                content:'';
+                margin-right:.04rem;
+                display:inline-block;
+                width:.12rem;
+                height:.12rem;
+                border:2px solid #10a9ec;
+                position:relative;
+                top:2px;
+                background: url(../../images/remember.png) no-repeat center center;
+                background-size:.16rem .16rem;
+            }
+        }
+        .become_vip{
+            display:block;
+            line-height:.2rem;
+            font-size:12px;
+            color:#008acb;
+            margin:.2rem 0 .2rem;
+        }
+        .submit_container{
+            width:100%;
+            text-align:center;
+            input[type="submit"]{
+                height:.47rem;
+                width:1.59rem;
+                border:1px solid #cbd5dd;
+                border-radius:.23rem;
+                color:#fff;
+                background: #d1d9e0;
+                font-size:14px;
+            }
+        }
+
     }
 }

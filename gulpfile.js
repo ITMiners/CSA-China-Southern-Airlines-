@@ -1,11 +1,12 @@
 
 var gulp = require('gulp');
 
-var cleanCss = require('gulp-clean-css');
+//var cleanCss = require('gulp-clean-css');
 var uglifyJs = require('gulp-uglify');
 var connect = require('gulp-connect');
 var rubySass = require('gulp-ruby-sass');
 var concat = require('gulp-concat');
+var babel = require('gulp-babel');
 
 
 //编译sass
@@ -17,15 +18,22 @@ gulp.task('sass', function () {
 });
 
 //压缩JS
+//gulp.task('minifyJs', function () {
+//    return gulp.src('./src/js/*.js')
+//        .pipe(uglifyJs())
+//        .pipe(gulp.dest('./dist/js/'));
+//});
 gulp.task('minifyJs', function () {
     return gulp.src('./src/js/*.js')
+        .pipe(babel({
+            presets: ['env']
+        }))
         .pipe(uglifyJs())
         .pipe(gulp.dest('./dist/js/'));
 });
-
 //监听Html
 gulp.task('html', ['sass', 'minifyJs'], function () {
-    return gulp.src('./index.html').pipe(connect.reload());
+    return gulp.src('./personal_center.html').pipe(connect.reload());
 });
 
 //监听
