@@ -1,5 +1,13 @@
 @import '_common';
 
+
+.header-fix{
+    position: fixed;
+    width:100%;
+    z-index:999;
+    top:0;
+    left: 0;
+}
 //header
 header{
     background: #11a9ec;
@@ -64,6 +72,7 @@ header{
     background:#035483;
     position: relative;
     overflow: hidden;
+    margin-top:0.95rem;
     .dot{
         position: absolute;
         width:0.1rem;
@@ -218,3 +227,66 @@ header{
     }
 }
 // disk end
+
+// function
+.function{
+    .function-list{
+        margin-top:0.1rem;
+        h3{
+            position: relative;
+            font-size: 0.15rem;
+            color:#052852;
+            line-height: 0.34rem;
+            text-indent: 0.19rem;
+            background: #fff;
+            border-bottom:1px solid #efeff4;
+            span{
+                position: absolute;
+                display: block;
+                width:0.06rem;
+                height:0.15rem;
+                left:0;
+                top:0.1rem;
+            }
+            em{
+                font-size: 0.12rem;
+                color:#798691;
+                font-weight: 500;
+            }
+        }
+        ul{
+            display: flex;
+            background: #fff;
+            li{
+                width:25%;
+                height:1.03rem;
+                background: #fff;
+                a{
+                    display: flex;
+                    flex-direction: column;
+                    height:100%;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 0;
+                    img{
+                        width:0.4rem;
+                        height:0.4rem;
+                    }
+                    span{
+                        font-size: 0.12rem;
+                        color:#0f3058;
+                        line-height: 0.23rem;
+                    }
+                }
+            }
+        }
+    }
+}
+// function end
+
+// footer-blank
+.footer-blank{
+    width:100%;
+    height:0.49rem;
+}
+// footer-blank end
