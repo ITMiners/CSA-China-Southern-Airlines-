@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>航班信息</title>
+    <link rel="stylesheet" href="./dist/style/flight_info.css"/>
+</head>
+<body>
+<!--header-->
+    <header>
+        <div class="header_warp">
+            <a href="javascript:;" class="header_l"></a>
+            <h3>CZ3130</h3>
+            <a href="javascript:;" class="header_r"></a>
+        </div>
+    </header>
+<!--content-->
+    <div class="content">
+        <div class="section1">
+            <div class="flag"></div>
+            <img src="images/flight_info_distance.jpg"/>
+            <p>CZ3130 飞行总时长2小时24分</p>
+        </div>
+        <div class="stop_time_container">
+            <div class="stop_time">
+                <img src="images/stop_time.jpg"/><span>13:40&nbsp;&nbsp;航班停止办理值机手续</span>
+            </div>
+        </div>
+
+        <div class="plane_container">
+            <div class="plane">
+                <div class="plane_top">
+                    <img src="images/plane.jpg" class="tit_img"/>
+                    <img src="images/plane2.jpg" class="weather"/>
+                </div>
+            </div>
+            <div class="plane_content">
+                <div class="plane_start">
+                    <h3 class="start_id">XNN</h3>
+                    <p class="start_place">西宁曹家堡T2</p>
+                    <p class="plane_start_date">预计起飞 01月09日</p>
+                    <h4 class="start_time">14:10</h4>
+                    <p class="plane_start_time">计划起飞 01/09 14:10</p>
+                </div>
+                <div class="plane_mid">
+                    <img src="images/plane_mid.jpg"/>
+                </div>
+                <div class="plane_end">
+                    <h3 class="end_id">CSX</h3>
+                    <p class="end_place">长沙黄花T2</p>
+                    <p class="plane_end_date">预计起飞 01月09日</p>
+                    <h4 class="end_time">16:34</h4>
+                    <p class="plane_end_time">计划到达 01/09 16:35</p>
+                </div>
+            </div>
+            <div class="plane_info_container">
+                <div class="plane_info">
+                    <div class="plane_info_panel">
+                        <h4>值机柜台</h4>
+                        <a href="javascript:;" class="panel_data">1-12 1...</a>
+                    </div>
+                    <div class="plane_info_panel">
+                        <h4>登机口</h4>
+                        <span class="panel_data">7</span>
+                    </div>
+                    <div class="plane_info_panel">
+                        <h4>到达口</h4>
+                        <span class="panel_data">--</span>
+                    </div>
+                    <div class="plane_info_panel">
+                        <h4>行李转盘</h4>
+                        <span class="panel_data">--</span>
+                    </div>
+                </div>
+                <div class="plane_info">
+                    <div class="plane_info_panel">
+                        <h4>值机截止时间</h4>
+                        <span class="panel_data">13:40</span>
+                    </div>
+                    <div class="plane_info_panel">
+                        <h4>座位号</h4>
+                        <span class="panel_data">--</span>
+                    </div>
+                    <div class="plane_info_panel">
+                        <h4>登机二维码</h4>
+                        <span class="panel_data">--</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--server-->
+        <div class="server_progress_container">
+            <div class="server_progress_top">
+                <h3>服务进度</h3>
+            </div>
+            <div class="server_progress">
+                <div class="server_step"></div>
+            </div>
+        </div>
+    </div>
+<!--footer-->
+    <footer>
+        <button>关注本航班</button>
+    </footer>
+</body>
+</html>

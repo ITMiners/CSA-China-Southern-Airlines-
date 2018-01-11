@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>登录</title>
+    <link rel="stylesheet" href="dist/style/login.css" />
+    <script src="https://cdn.bootcss.com/jquery/1.8.2/jquery.js"></script>
+</head>
+
+<body>
+    <!--signal-->
+    <div class="signal"></div>
+    <!--header-->
+    <div class="header">
+        <a href="javascript:history.back();"></a>
+        <h3>欢迎登录</h3>
+    </div>
+    <!--content-->
+    <div class="content">
+        <div class="login_type">
+            <a href="javascript:;" id="vip_type" class="active">会员登录</a>
+            <a href="javascript:;" id="dynamic_type">动态密码登录</a>
+        </div>
+        <form action="javascript:;" class="login_form">
+            <!--会员登录-->
+            <div class="vip_login_container">
+                <input type="text" name="username" placeholder="手机/邮箱/会员号/证件号">
+                <input type="password" name="userpass" placeholder="密码">
+                <a href="javascript:;" class="forget">忘记密码</a>
+            </div>
+            <!--动态密码登录-->
+            <div class="dynamic_lgoin_container">
+                <input type="text" name="phone_num" placeholder="国内11位手机号">
+                <input type="password" name="phone_pass" placeholder="动态密码">
+                <a href="javascript:;" class="getpass">获取动态密码</a>
+            </div>
+                <input type="checkbox" id="remember"><label for="remember">记住账号</label>
+                <a href="javascript:;" class="become_vip">申请明珠卡成为明珠会员</a>
+
+            <div class="submit_container">
+                <input type="submit" value="登录">
+            </div>
+        </form>
+    </div>
+    <script>
+                $('form').submit(function(){
+                    window.location.href="index.html";
+                })
+    </script>
+
+    <script src="dist/js/login.js"></script>
+</body>
+
+</html>

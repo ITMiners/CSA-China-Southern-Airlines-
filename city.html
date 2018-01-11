@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <link rel="stylesheet" href="dist/style/city.css">
+    <title>city</title>
+</head>
+<body>
+    <!-- city -->
+    <div class="city">
+        <div class="city-head">
+            <div class="city-search">
+                <div class="search-l">
+                    <a href="index.html">
+                        <img src="images/backward.png" alt="">
+                    </a>
+                </div>
+                <div class="search-r">
+                    <input type="text" placeholder="广州/guangzhou/gz/CAN/中国">
+                    <button>
+                        <img src="images/search-silver.png" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="city-change">
+                <h1 class="active">国内城市</h1>
+                <h1>港澳台/国际</h1>
+            </div>
+        </div>
+        <div class="city-detail">
+            <div class="module current">
+                <h3>当前/历史</h3>
+                <ul>
+                    <li>西安</li>
+                    <li>成都</li>
+                    <li>阿坝</li>
+                    <li>上海虹桥</li>
+                </ul>
+            </div>
+            <div class="module hot">
+                <h3>热门城市</h3>
+                <ul>
+                    <li v-for="c in hot">{{c.name}}</li>
+                </ul>
+            </div>
+            <div class="letter">
+                <div class="letter-list" v-for="l in letter">
+                    <h1>{{l.cap}}</h1>
+                    <ul>
+                        <li v-for="c in l.cities">{{c.city}}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="sort-fixed">
+            <ul>
+                <li>GPS</li>
+                <li>历史</li>
+                <li>热门</li>
+                <li>A</li>
+                <li>B</li>
+                <li>C</li>
+                <li>D</li>
+                <li>E</li>
+                <li>F</li>
+                <li>G</li>
+                <li>H</li>
+                <li>J</li>
+                <li>K</li>
+                <li>L</li>
+                <li>M</li>
+                <li>N</li>
+                <li>O</li>
+                <li>P</li>
+                <li>Q</li>
+                <li>R</li>
+                <li>S</li>
+                <li>T</li>
+                <li>U</li>
+                <li>V</li>
+                <li>W</li>
+                <li>X</li>
+                <li>Y</li>
+                <li>Z</li>
+            </ul>
+        </div>
+    </div>
+    <!-- city end-->
+
+<script src="dist/js/index-city.js"></script>
+
+</body>
+</html>
