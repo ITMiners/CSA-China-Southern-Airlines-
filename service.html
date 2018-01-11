@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>service</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="dist/js/vue.js"></script>
+    <link rel="stylesheet" href="dist/style/service.css">
+</head>
+<body>
+
+    
+<div class="header-fix">
+<!-- header -->
+<header>
+    <p>服务大厅</p>
+</header>
+<!-- header end-->
+
+<!-- search -->
+<div class="search">
+    <form action="" class="search-form">
+        <img src="images/search.png" alt="">
+        <input type="text" placeholder="搜索">
+        <span class="cancel">取消</span>
+    </form>
+</div>
+<!-- search end-->
+
+</div>
+
+
+<!-- disk -->
+<div class="disk">
+    <span class="dot dot-l"></span>
+    <span class="dot dot-m"></span>
+    <span class="dot dot-r"></span>
+    <em class="dot-txt dot-txt-l">行前计划</em>
+    <em class="dot-txt dot-txt-m">出行服务</em>
+    <em class="dot-txt dot-txt-r">安全抵达</em>
+    <div class="big-circle"></div>
+    <div class="middle-circle"></div>
+    <div class="small-circle pre-plan">
+        <ul>
+            <li style="border-top:none">
+                <a href="javascript:;">
+                    <img src="images/disk-1.png" alt="">
+                    <span>机票预订</span>
+                </a>
+            </li>
+            <li style="border-top:none">
+                <a href="javascript:;">
+                    <img src="images/disk-2.png" alt="">
+                    <span>酒店</span>
+                </a>
+            </li>
+        </ul>
+        <ul>
+            <li style="border-bottom:none">
+                <a href="javascript:;">
+                    <img src="images/disk-3.png" alt="">
+                    <span>旅游度假</span>
+                </a>
+            </li>
+            <li style="border-bottom:none">
+                <a href="javascript:;">
+                    <img src="images/disk-4.png" alt="">
+                    <span>景点门票</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="center-circle"></div>
+    <div class="center-logo"></div>
+    <div class="up-more">
+        上滑获取更多功能
+        <img src="images/up-more.png" alt="">
+    </div>
+</div>
+<!-- disk end -->
+
+<!-- function -->
+<div class="function">
+    <div class="function-list" v-for="l in lists">
+        <h3>
+            <span style="background:#e50a51"></span>
+            {{l.title}}
+            <em>(长按图标可拖动排序)</em>
+        </h3>
+        <ul v-for="u in l.row">
+            <li v-for="i in u.item"  v-drag>
+                <a href="javascript:;">
+                    <img :src="i.pic" alt="">
+                    <span>{{i.txt}}</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- function end-->
+
+<!-- footer-blank -->
+<div class="footer-blank"></div>
+<!-- footer-blank end-->
+
+<!-- footer -->
+<footer>
+    <ul>
+        <li>
+            <a href="index.html">
+                <img src="images/footer-1-a.png" alt="">
+                <span>首页</span>
+            </a>
+        </li>
+        <li>
+            <a href="travel.html">
+                <img src="images/footer-2.png" alt="">
+                <span>行程</span>
+            </a>
+        </li>
+        <li>
+            <a href="service.html">
+                <img src="images/footer-3-a.png" alt="">
+                <span style="color:#008acb">服务大厅</span>
+            </a>
+        </li>
+        <li>
+            <a href="dynamics.html">
+                <img src="images/footer-4.png" alt="">
+                <span>航班动态</span>
+            </a>
+        </li>
+        <li>
+            <a href="personal_center.html">
+                <img src="images/footer-5.png" alt="">
+                <span>我</span>
+            </a>
+        </li>
+    </ul>
+</footer>
+<!-- footer end-->
+
+<script src="dist/js/common.js"></script>
+<script src="dist/js/service-disk.js"></script>
+<script src="dist/js/service.js"></script>
+</body>
+
+</html>

@@ -14,7 +14,7 @@
     <div class="signal"></div>
     <!--header-->
     <div class="header">
-        <a href="javascript:;"></a>
+        <a href="javascript:history.back();"></a>
         <h3>欢迎登录</h3>
     </div>
     <!--content-->
@@ -23,7 +23,7 @@
             <a href="javascript:;" id="vip_type" class="active">会员登录</a>
             <a href="javascript:;" id="dynamic_type">动态密码登录</a>
         </div>
-        <form action="" class="login_form">
+        <form action="javascript:;" class="login_form">
             <!--会员登录-->
             <div class="vip_login_container">
                 <input type="text" name="username" placeholder="手机/邮箱/会员号/证件号">
@@ -44,7 +44,11 @@
             </div>
         </form>
     </div>
-
+    <script>
+                $('form').submit(function(){
+                    window.location.href="index.html";
+                })
+    </script>
 
     <script src="dist/js/login.js"></script>
 </body>

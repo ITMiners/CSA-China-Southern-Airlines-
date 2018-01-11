@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <link rel="stylesheet" href="./dist/style/reg.css"/>
+    <script src="https://cdn.bootcss.com/jquery/1.8.2/jquery.js"></script>
+</head>
+<body>
+<!--header-->
+    <header>
+        <div class="header_l">
+            <a href="javascript:history.back();" class="back"></a>
+            <span class="reg_tit">注册</span>
+        </div>
+        <a href="index.html" class="home_link"></a>
+    </header>
+<!--section-->
+    <section>
+        <form action="javascript:;" class="reg_form">
+            <div class="family_name reg_div">
+                <span>中文姓</span><input type="text" name="family_name" value="生僻字可用拼音代替"/>
+            </div>
+            <div class="family_name_pinyin reg_div">
+                <span>姓氏拼音</span><input type="text" value=""/>
+            </div>
+            <div class="name reg_div">
+                <span>中文名</span><input type="text" name="name" value="生僻字可用拼音代替"/>
+            </div>
+            <div class="zh_name reg_div">
+                <span>名字拼音</span><input name="zh_name" type="text" value=""/>
+            </div>
+            <div class="zh_name reg_div">
+                <span>证件类型</span><span class="certificates">身份证></span>
+            </div>
+            <div class="certificates_num reg_div">
+                <span>证件号码</span><input type="text" name="certificates_num" value="必填"/>
+            </div>
+            <div class="birthday reg_div">
+                <span>生日</span><input type="date" name="birthday" />
+            </div>
+            <div class="sex_box reg_div">
+                <span>称呼</span><span class="sex">先生></span>
+            </div>
+            <div class="phone_num reg_div">
+                <span>手机号</span><input type="text" name="phone_num" value="必填"/>
+            </div>
+            <div class="verify_code reg_div">
+                <input type="text" name="verify_code" value="请输入短信验证码"/>
+                <a href="javascript:;" class="verify_link">获取验证码</a>
+            </div>
+            <div class="checkbox_div">
+                <input type="checkbox" checked/><a href="javascript:;" class="read">阅读并接受服务协议</a>
+                <p>温馨提示:您填写的手机号码将作为明珠卡号的后11位</p>
+            </div>
+            <div class="submit_div">
+                <input type="submit" value="注册"/>
+            </div>
+            <script>
+                $('form').submit(function(){
+                    window.location.href="index.html";
+                })
+             </script>
+        </form>
+    </section>
+
+    <div class="shadow">
+        <div class="content">
+            <p>这是提示</p>
+        </div>
+    </div>
+</body>
+</html>

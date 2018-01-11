@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <link rel="stylesheet" href="dist/style/bill.css">
+    <title>bill</title>
+</head>
+<body>
+
+<!-- header -->
+<div class="header">
+    <div class="back">
+        <a href="javascript:history.back();">
+            <img src="images/bill-1.png" alt="">
+        </a>
+    </div>
+    <div class="txt">
+        填写订单
+    </div>
+    <div class="home">
+        <a href="index.html">
+            <img src="images/bill-2.png" alt="">
+        </a>
+    </div>
+</div>
+<!-- header end-->
+
+<!-- fare -->
+<div class="fare">
+    <div class="title">
+        <p class="way">去程</p>
+        <p class="date">2018-01-10(周三)</p>
+        <p class="type">优闲派</p>
+    </div>
+    <div class="info">
+        <div class="logo">
+            <img src="images/bill-3.png" alt="">
+            <span>CZ9098</span>
+        </div>
+        <div class="explain">
+            <div class="t">
+                <p>2018-01-10</p>
+                <div>
+                    <p>经停<em>无</em></p>
+                    <p>配餐<em>有</em></p>
+                </div>
+            </div>
+            <div class="m">
+                <span>西安</span>
+                <span>-</span>
+                <span>上海浦东</span>
+            </div>
+            <div class="b">
+                <span>出发<em>21:00</em></span>
+                <span>到达<em>23:20</em></span>
+            </div>
+            <div class="air">
+                <span>空客320</span>
+            </div>
+        </div>
+    </div>
+    <div class="tip">
+        <p>*该航班为中国东方航空公司承运的南航代码共享航班，登机前请到中国东方航空公司值机柜台办理值机</p>
+    </div>
+    <div class="condition">
+        <span>使用条件:</span>
+        <img src="images/bill-4.png" alt="">
+    </div>
+</div>
+<!-- fare end-->
+
+<!-- detail -->
+<div class="detail">
+    <p class="who">
+        <span>乘机人</span> 
+        <img src="images/bill-5.png" alt="">
+    </p>
+    <p class="contact">
+        <span>联系人：<em>汪洋龙</em></span>
+        <img src="images/bill-6.png" alt="">
+    </p>
+    <p class="phone">
+        <span>手机号：<em>13227783227</em></span>
+    </p>
+</div>
+<!-- detail end-->
+
+<!-- choice -->
+<div class="choice">
+    <ul>
+        <li>
+            <div class="check">
+                <input type="checkbox" style="display:none" id="c1">
+                <label for="c1">航空综合险(<em>30</em>元/份)</label>
+                <img src="images/bill-7.png" alt="">
+            </div>
+            <p class="describe">航班延误达3小时起赔300元，最高赔付600元；意外险最高赔付200万元</p>
+        </li>
+        <li>
+            <div class="check">
+                <input type="checkbox" style="display:none" id="c2">
+                <label for="c2">机票退票险(
+                    <em>38</em>元/份)</label>
+                <img src="images/bill-7.png" alt="">
+            </div>
+            <p class="describe">航班起飞前申请退票赔付退票手续费的50%，最高赔2000元</p>
+        </li>
+        <li>
+            <div class="check">
+                <input type="checkbox" style="display:none" id="c3">
+                <label for="c3">请阅读并接受《禁止携带危险品公告》</label>
+            </div>
+        </li>
+    </ul>
+</div>
+<!-- choice -->
+
+<!-- total -->
+<div class="total">
+    <div class="l">
+        <p>订单总价
+            <span>￥930</span>
+        </p>
+        <img src="images/bill-10.png" alt="">
+    </div>
+    <div class="r">
+        <span>生成订单</span>    
+    </div>
+</div>
+<!-- total end-->
+
+</body>
+</html>

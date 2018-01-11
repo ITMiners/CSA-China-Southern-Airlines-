@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <title>航班动态</title>
+    <link rel="stylesheet" href="dist/style/dynamics.css" />
+    <script src="https://cdn.bootcss.com/jquery/1.8.2/jquery.js"></script>
+</head>
+
+<body>
+    <!--signal-->
+    <div class="signal"></div>
+    <!--header-->
+    <div class="header">
+        <h3>航班动态</h3>
+    </div>
+    <div class="header-choose">
+        <a href="javascript:;" id="present">当前</a>
+        <a href="javascript:;" id="history" class="active1">历史</a>
+    </div>
+    <!-- history -->
+    <div class="history-text">
+        <span class="nothing">您当前无历史关注记录哦~</span>
+    </div>
+    <!--content-->
+    <div class="content">
+        <div class="login_type">
+            <a href="javascript:;" id="vip_type" class="active">按起降地</a>
+            <a href="javascript:;" id="dynamic_type">按航班号</a>
+        </div>
+        <form action="javascript:;" class="login_form1">
+            <div class="leave">
+                <div class="pic"><img src="images/af.png" alt=""></div>
+                <div class="start">
+                    <span class="go">出发城市</span>
+                    <input type="text" value="西安" class="city" id="go">
+                    <img src="images/change.png" alt="" class="change_img">
+                </div>
+            </div>
+            <div class="arrive">
+                <div class="pic"><img src="images/ah.png" alt=""></div>
+                <div class="end">
+                    <span class="to">到达城市</span>
+                    <input type="text" value="北京" class="city" id="to">
+                </div>
+            </div>
+            <div class="time">
+                <div class="pic"><img src="images/ak.png" alt=""></div>
+                <div class="data">
+                    <input type="date" value="2018年1月8日 今天" class="city">
+                </div>
+            </div>
+            <b class="ps">*起飞时间为当地时间</b>
+            <a href="query.html" id="check"><input type="submit" value="开始查询"></a>
+        </form>
+        <!-- 按航班号 -->
+        <form action="" class="login_form2">
+            <div class="leave">
+                <div class="pic"><img src="images/af.png" alt=""></div>
+                <div class="start">
+                    <span class="">请输入航班号，如3101</span>
+                    <input type="text" value="CZ" class="city">
+                </div>
+            </div>
+            <div class="time">
+                <div class="pic"><img src="images/ak.png" alt=""></div>
+                <div class="data">
+                    <input type="date" value="2018年1月8日 今天" class="city">
+                </div>
+            </div>
+            <b class="ps">*起飞时间为当地时间</b>
+            <a href="javascript:;" id="check">
+                <input type="submit" value="开始查询">
+            </a>
+        </form>
+    </div>
+    <div class="info">
+        <span id="p1">航空小知识</span>
+        <span id="p2">为了确保飞行安全，机长有严格的飞行时间限制</span>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <ul>
+            <li>
+                <a href="index.html">
+                    <img src="images/footer_ico1.jpg">
+                    <span>首页</span>
+                </a>
+            </li>
+            <li>
+                <a href="travel.html">
+                    <img src="images/footer-2.png" alt="">
+                    <span>行程</span>
+                </a>
+            </li>
+            <li>
+                <a href="service.html">
+                    <img src="images/footer-3.png" alt="">
+                    <span>服务大厅</span>
+                </a>
+            </li>
+            <li>
+                <a href="dynamics.html">
+                    <img src="images/footer_4_active.jpg">
+                    <span style="color:#008acb">航班动态</span>
+                </a>
+            </li>
+            <li>
+                <a href="personal_center.html">
+                    <img src="images/footer-5.png" alt="">
+                    <span>我</span>
+                </a>
+            </li>
+        </ul>
+    </footer>
+    <!-- footer end-->
+
+
+    <script src="dist/js/dynamics.js"></script>
+</body>
+
+</html>
